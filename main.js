@@ -73,7 +73,7 @@ $(document).ready(function() {
 
     });
     $('.into').slick({
-        slidesToShow: 6,
+        slidesToShow: 5,
         slidesToScroll: 1,
         focusOnSelect: true,
         asNavFor: '#area'

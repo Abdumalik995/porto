@@ -3,7 +3,8 @@
 }
 body {
     margin: 0;
-    padding: 0;
+    margin-right: 0;
+    max-width: 1200px;
     font-family: 'Ubuntu', sans-serif;
     background: #fff;
     color: #000;
@@ -45,11 +46,7 @@ nav>ul>li {
     text-align: center;
     width: 160px;
 }
-nav>ul>li:last-child {
-    left: 10px;
-    width: 30px;
-    cursor: pointer;
-}
+
 nav div {
     cursor: pointer;
 }
@@ -77,6 +74,10 @@ nav div {
     background: #ccc;
 }
 nav>ul>li:nth-child(6) {
+    left: 10px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
     position: relative;
 }
 nav>ul>li:nth-child(6):hover .inmenu {
@@ -94,14 +95,14 @@ nav>ul>li:nth-child(6):hover .inmenu {
     width: 100%;
     min-width: 100vw;
     height: 500px;
-    max-height: 100vh;
+    min-height: 100vh;
     padding-top: 80px;
     margin-bottom: 100px;
 }
 #left {
-    width: 45%;
+    width: 30%;
     height: 100%;
-    padding: 10px 20px 0 150px;
+    /*padding-left:10%;*/
     background: #fff;
 }
 #left h1 {
@@ -146,9 +147,10 @@ nav>ul>li:nth-child(6):hover .inmenu {
     color: #bb2140;
 }
 #right {
-    width: 55%;
+    width: 60%;
     height: 100%;
     margin-top: 20px;
+    right: 0;
     background: url(../img/info.jpg) no-repeat center;
     background-size: cover;
     text-align: center;
@@ -159,9 +161,9 @@ nav>ul>li:nth-child(6):hover .inmenu {
 }
 #right h4 {
     font-family: 'Indie Flower', cursive;
-    margin-top: 80px;
+    margin-top: 12%;
     text-align: right;
-    margin-right: 110px;
+    margin-right: 18%;
 }
 #right img {
     margin-top: 10px;
@@ -223,6 +225,7 @@ nav>ul>li:nth-child(6):hover .inmenu {
     border: 1px solid #abcaaa;
     border-radius: 4px;
     cursor: pointer;
+    overflow: hidden;
 }
 #area {
     margin: auto;
@@ -459,7 +462,57 @@ footer>.r-right {
     bottom: 30px;
     cursor: pointer;
 }
-.r-left, .r-right {
-    display: none;
+
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 15px;
+    }
+    header>.my {
+        width: 20%;
+    }
+    nav {
+        width: 70%;
+    }
+    #left {
+        padding-left: 10px;
+    }
+    #info>.r-left {
+        left: 0;
+    }
+    #info>.r-right {
+        right: 0;
+    }
+    #plus>ul>li>h3 {
+        font-size: 22px;
+    }
 }
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 576px) {
+    header {
+        font-size: 12px;
+    }
+    nav {
+        display: none;
+    }
+    #right {
+        display: none;
+    }
+    .r {
+        font-size: 14px;
+    }
+    #left h1 {
+        font-size: 25px;
+    }
+    #right {
+        margin-top: 0;
+    }
+    .r-left, .r-right {
+        display: none;
+    }
+    #go {
+        display: none;
+    }
+    .tarif {
+        display: none;
+    }
+
+}
