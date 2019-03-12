@@ -2,8 +2,9 @@ $(document).ready(function() {
 
 
 	$('#bars').click(function() {
-		if(forc=="a"){
-        $('html, body').animate({scrollTop:0}, 300);
-      }
-	})
+
+        $('html, body').animate({scrollTop:500}, 500);
+        $('header').css('position','sticky');
+      
+	});
 })
