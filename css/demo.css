@@ -53,6 +53,7 @@ header {
 #hero {
     background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/for.jpg) no-repeat;
     background-size: cover;
+    padding-bottom: 100px;
 }
 .container {
     width: 95%;
@@ -70,7 +71,13 @@ header {
 }
 .col .card {
     width: 27%;
-    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.5);
+    
+
+}
+.card-body {
+	color: #009688;
+	padding: 10px;
 }
 .card img {
     width: 100%;
