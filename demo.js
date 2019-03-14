@@ -9,5 +9,9 @@ $(document).ready(function() {
 	});
 	$('#sub').click(function(e) {
 		e.preventDefault();
-	})
+	});
+	$('#hisob').click(function() {
+		$('#calc').slideToggle().toggleClass('open');
+		console.log('heyy');
+	});
 })
