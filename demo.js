@@ -7,4 +7,7 @@ $(document).ready(function() {
         $('header').css('position','sticky');
       
 	});
+	$('#sub').click(function(e) {
+		e.preventDefault();
+	})
 })
