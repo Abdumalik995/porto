@@ -118,6 +118,16 @@ header {
     display: none;
    
 }
+#calc #yop {
+	padding: 10px;
+	font-size: 25px;
+	color: orange;
+	
+	margin: 15px;
+	background: transparent; 
+	border: 1px solid #fff;
+	cursor: pointer;
+}
 input[type=button] {
     border: none;
     width: 55px;
