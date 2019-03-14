@@ -106,4 +106,10 @@ header {
  	border-radius: 10px;
 
  }
- 
+ #mess form input[type="submit"] {
+ 	background: lightblue;
+ 	cursor: pointer;
+ 	font-size: 17px;
+ 	font-weight: bold;
+ 	color: rgba(0,0,0,0.7);
+ }
