@@ -188,12 +188,29 @@ input.num {
 	cursor: pointer;
 	font-size: 20px;
 }
-#footer_hero {
-	display:flex;
-	justify-content: space-between;
+footer {
+	position: relative;
+	background: #222;
+	color: #eee;
+	font-size: 17px;
+	padding: 30px 0;
 	
 
 }
+footer h1 {
+	text-align: center;
+}
+#footer_hero {
+	display:flex;
+	justify-content: space-between;
+	padding: 20px;
+
+
+}
+#footer_hero ul {
+	list-style: none;
+}
+
 /*button:hover::before {
     content: '';
     position: absolute;
