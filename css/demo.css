@@ -188,6 +188,12 @@ input.num {
 	cursor: pointer;
 	font-size: 20px;
 }
+#footer_hero {
+	display:flex;
+	justify-content: space-between;
+	
+
+}
 /*button:hover::before {
     content: '';
     position: absolute;
