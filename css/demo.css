@@ -210,9 +210,17 @@ footer h1 {
 #footer_hero ul {
 	list-style: none;
 }
-footer hr {
-	
+#soc_icons {
+	width: 40%;
+	margin-left: auto;
+	display: flex;
+	justify-content: space-around;
+	color: orange;
 }
+ #soc_icons .fab {
+ 	cursor: pointer;
+ 	font-size: 25px;
+ }
 
 /*button:hover::before {
     content: '';
