@@ -45,6 +45,7 @@ header {
         transform: translatex(0);
     }
 }
+
 #bars i {
     color: #eee;
     animation-name: trans;
@@ -187,3 +188,21 @@ input.num {
 	cursor: pointer;
 	font-size: 20px;
 }
+/*button:hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: red;
+    transform: translateX(0%);
+}
+@keyframes col {
+	0% {
+		color: transparent;
+	} 100% {
+		color: red;
+	}
+}*/
+
